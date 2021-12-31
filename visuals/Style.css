@@ -29,4 +29,9 @@ button{
     background-color: white;
     color: black;
     margin: 1rem;
+    border-radius: 1rem;
+}
+
+#Vissamling {
+    margin:1rem; 
 }
