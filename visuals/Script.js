@@ -9,5 +9,10 @@ function showCollection(){
 }
 
 function addRecord(){
-    
+    vinylInfo.innerHTML=<form>
+        <label>Name of record</label>
+        <input>record</input>
+        <label>Artist/group</label>
+        <input>Artist name</input>
+    </form>
 }
