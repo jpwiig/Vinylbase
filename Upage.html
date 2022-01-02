@@ -7,13 +7,32 @@
     </head>
     <body>
         <h1>Welcome User</h1>
-        <p>Here is your collection of  your own records</p>
-        <button id="Vissamling" onclick="showCollection()"> Collection </button>
-        <button id="leggTil"  onclick="addRecord()">add a record</button>
-        <button id="fjern">Remove a record</button>
-        <br> 
-        <span id="vinylInfo">
+        <p>Here is your page</p>
+
+        <button id="leggTil" onclick="addRecord()">add a record</button>
+        <button id="fjern" onclick="removeRecord()">Remove a record</button>
+        <br>
+        <span id="vinylInfo"></span>
+
+        <span id="nyPlate">
+            <form>
+            <label>Name of record</label>
+    <br>
+    <input>
+    <br>
+    <label>Artist/group</label>
+    <br>
+    <input>
+    <br>
+    <label>Release year</label>
+    <br>
+    <input>
+    <br>
+    <button id="lagtTil"onclick="addedRecord()">submit</button>
+                </form>
         </span>
+
+<p>plass for samling</p>
 
     </body>
 </html>

@@ -35,3 +35,6 @@ button{
 #Vissamling {
     margin:1rem; 
 }
+#nyPlate{
+    display: none;
+}
