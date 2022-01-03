@@ -22,15 +22,16 @@ else{
 function removeRecord(){
     vinylInfo.textContent="What record do you want to remove?";
 }
+
+const RecordName=document.getElementById("Recordname");
+const Artist=document.getElementById("Artist");
+const Release=document.getElementById("release");
+
 function addedRecord(){
-    const RecodName=document.getElementById("Recordname");
-    const Artist=document.getElementById("Artist");
-    const Release=document.getElementById("relase");
-    if (RecodName==null && Artist==null && Release==null){
+    if (RecordName===null){
         alert("please fill out the form");
     }
     else {
-        vinylInfo.textContent="Record added!"; 
+        vinylInfo.textContent="Record added!";
     }
-
 }
