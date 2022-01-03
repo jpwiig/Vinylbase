@@ -8,21 +8,29 @@ function showCollection(){
     vinylInfo.textContent="Your collection: "; 
 }
 //if loops in JavaScript
-var vis=document.getElementById('nyPlate');
+ document.getElementById("nyPlate");
 function addRecord(){
-  if (vis.style.display==='none'){
-      vis.style.display='block';
+    //hentet fra: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+  if (nyPlate.style.display==="none"){
+      nyPlate.style.display="block";
   }
 else{
-    vis.style.display='none';
+    nyPlate.style.display="none";
   }
+
 }
 function removeRecord(){
     vinylInfo.textContent="What record do you want to remove?";
-    if(vinylInfo.style.visibility==="inline"){
-        vinylInfo.style.visibility="none";
-    }
 }
 function addedRecord(){
-    vinylInfo.textContent="Record Added!";
+    const RecodName=document.getElementById("Recordname");
+    const Artist=document.getElementById("Artist");
+    const Release=document.getElementById("relase");
+    if (RecodName==null && Artist==null && Release==null){
+        alert("please fill out the form");
+    }
+    else {
+        vinylInfo.textContent="Record added!"; 
+    }
+
 }
