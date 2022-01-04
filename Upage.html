@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/visuals/Style.css">
-        <script type="application/javascript" src="/visuals/Script.js"></script>
+        <link rel="stylesheet" href="visuals/Style.css">
+        <script type="application/javascript" src="visuals/Script.js"></script>
         <title>VinylBase - Your profile</title>
     </head>
     <body>
@@ -14,23 +14,23 @@
         <br>
         <span id="vinylInfo"></span>
 
-        <span id="nyPlate">
-            <form>
+        <!--<span id="nyPlate">-->
+            <form name="new_Record" onsubmit="return addedRecord()">
             <label>Name of record</label>
     <br>
-    <input id="Recordname">
+    <input type="text" name="recordName">
     <br>
     <label>Artist/group</label>
     <br>
-    <input id="Artist">
+    <input type="text" name="artist">
     <br>
     <label>Release year</label>
     <br>
-    <input id="release">
+    <input type="text" name="releaseYear">
     <br>
-    <button id="lagtTil" onclick="addedRecord()">submit</button>
-                </form>
-        </span>
+    <input type="submit" value="submit">
+            </form>
+        <!--</span>-->
 
 <p>plass for samling</p>
 

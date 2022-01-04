@@ -38,3 +38,6 @@ button{
 #nyPlate{
     display: none;
 }
+input[type=submit]{
+    width: 4%;
+}

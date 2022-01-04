@@ -1,6 +1,6 @@
 document.getElementById('vinylInfo');
 function retiveInfo(){ 
-vinylInfo.textContent= "Heisann dette er en test";
+if()
 
 }
 
@@ -23,15 +23,22 @@ function removeRecord(){
     vinylInfo.textContent="What record do you want to remove?";
 }
 
-const RecordName=document.getElementById("Recordname");
-const Artist=document.getElementById("Artist");
-const Release=document.getElementById("release");
+
 
 function addedRecord(){
-    if (RecordName===null){
-        alert("please fill out the form");
+    var RecordName=document.forms["new_Record"]["recordName"].value;
+    var Artist=document.forms["new_Record"]["artist"].value;
+    var Release=document.forms["new_Record"]["releaseYear"].value;
+    if (RecordName==""){
+        alert("Fill out the name of the  record");
     }
-    else {
-        vinylInfo.textContent="Record added!";
+    if (Artist==""){
+        alert("fil out the name of the artist");
+    }
+    if(Release==""){
+        alert("fill out the date");
+    }
+    else{
+        alert("cool, sweet, nice");
     }
 }
