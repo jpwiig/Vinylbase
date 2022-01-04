@@ -1,20 +1,25 @@
 document.getElementById('vinylInfo');
 var loggInnEpost=document.forms["loggInn"]["email"].value;
 var loggInnPassord=document.forms["loggInn"]["passord"].value;
-function LoggIn(){
+function user(){
 if(loggInnEpost==""){
-alert("fill in your mail");
+alert(" please fill in your mail");
+return false;
 }
+
 if(loggInnPassord==""){
 alert("write in your password");
+return false;
 }
 else {
     window.location.href="Upage.html";
+    return false;
 }
 }
 
 function showCollection(){
-    vinylInfo.textContent="Your collection: "; 
+    vinylInfo.textContent="Your collection: ";
+    return false;
 }
 //if loops in JavaScript
  document.getElementById("nyPlate");
