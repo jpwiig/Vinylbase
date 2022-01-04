@@ -39,5 +39,6 @@ button{
     display: none;
 }
 input[type=submit]{
-    width: 4%;
+    width: 6%;
+    text-align: center;
 }

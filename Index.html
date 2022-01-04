@@ -12,14 +12,14 @@
     <br>eiciendis voluptates esse laudantium suscipit eaque illum praesentium saepe veritatis.</p> 
     
     <h2>Log in to see your Records!</h2>
-    <form name="loggInn">
+    <form name="loggInn" onsubmit="LoggIn()">
         <label> Email </label> <br>
-        <input type="email">
+        <input type="email" name="epost">
         <br>
         <label>Password</label><br>
-        <input type="password">
+        <input type="password" name="passord">
         <br>
-        <button onclick="retiveInfo()" >log in</button>
+        <input type="submit" name="submit">
 
     </form>
     <span id="vinylInfo"></span> 

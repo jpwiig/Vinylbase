@@ -1,7 +1,16 @@
 document.getElementById('vinylInfo');
-function retiveInfo(){ 
-if()
-
+var loggInnEpost=document.forms["loggInn"]["email"].value;
+var loggInnPassord=document.forms["loggInn"]["passord"].value;
+function LoggIn(){
+if(loggInnEpost==""){
+alert("fill in your mail");
+}
+if(loggInnPassord==""){
+alert("write in your password");
+}
+else {
+    window.location.href="Upage.html";
+}
 }
 
 function showCollection(){
