@@ -6,7 +6,7 @@ var InnEpost = document.forms["innlogging"]["epost"].value;
 var InnPassord = document.forms["innlogging"]["passord"].value;
 function Logginn() {
 
-    if (InnEpost == "") {
+    if (InnEpost =="") {
         alert(" please fill in your mail");
         return false;
     }
@@ -60,5 +60,5 @@ function addedRecord() {
     }
 }
 $(".gallery").click(function (){
-    $("gallery").slideDown();
+    $(".gallery").slideDown();
 });
