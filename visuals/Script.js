@@ -63,7 +63,6 @@ function addedRecord() {
     }
 }
 
-$("#img2").hide();
-$("#img1").click(function(){
-    $("#img2").slideDown();
-});
+
+
+
