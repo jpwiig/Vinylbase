@@ -1,25 +1,28 @@
 document.getElementById('vinylInfo');
 
-/*var InnEpost=document.forms["innlogging"]["epost"].value;
-var InnPassord=document.forms["innlogging"]["passord"].value;*/
-var InnEpost = document.forms["innlogging"]["epost"].value;
-var InnPassord = document.forms["innlogging"]["passord"].value;
-function Logginn() {
 
-    if (InnEpost =="") {
-        alert(" please fill in your mail");
-        return false;
-    }
+let InnEpost = document.forms["innlogging"]["epost"].value;
+let InnPassord= document.forms["innlogging"]["passord"].value;
+let validertEpost=false;
+let validertPassord=false;
+/*function Logginn() {
 
-    if (InnPassord == "") {
-        alert("write in your password");
-        return false;
+    if (InnEpost.attributes.required=false){
+        alert("fill inn your email please");
     }
-    else {
-        alert("All good");
-       top.location="Upage"
+    if (InnEpost.attributes.required=true){
+       validertEpost=true;
     }
-}
+    if (InnPassord.attributes.required=false){
+        alert("fill inn your email please");
+    }
+    if (InnPassord.attributes.required=true){
+        validertPassord=true;
+    }
+    if (validertEpost && validertPassord == true;){
+        window.location.pathname="/Upage.html";
+    }
+}*/
 
 function showCollection() {
     vinylInfo.textContent = "Your collection: ";
@@ -44,9 +47,9 @@ function removeRecord() {
 
 
 function addedRecord() {
-    var RecordName = document.forms["new_Record"]["recordName"].value;
-    var Artist = document.forms["new_Record"]["artist"].value;
-    var Release = document.forms["new_Record"]["releaseYear"].value;
+    let RecordName = document.forms["new_Record"]["recordName"].value;
+    let Artist = document.forms["new_Record"]["artist"].value;
+    let Release = document.forms["new_Record"]["releaseYear"].value;
     if (RecordName == "") {
         alert("Fill out the name of the  record");
     }
@@ -59,6 +62,8 @@ function addedRecord() {
         alert("cool, sweet, nice");
     }
 }
-$(".gallery").click(function (){
-    $(".gallery").slideDown();
+
+$("#img2").hide();
+$("#img1").click(function(){
+    $("#img2").slideDown();
 });
