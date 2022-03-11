@@ -7,5 +7,5 @@ $(document).ready(function (){
          $("img").show(500);
      }
      );
-
 });
+
